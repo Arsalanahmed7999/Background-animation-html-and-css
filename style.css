@@ -1,0 +1,94 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #000;
+}
+
+.bubble{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+
+span{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(170, 255, 0);
+    box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 40px yellow;
+    margin: 0 8px;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+
+span:nth-child(even){
+    background-color: rgb(186, 0, 186);
+    box-shadow: 0 0 10px violet, 0 0 20px violet, 0 0 40px violet;
+}
+
+@keyframes  animate {
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(0vh) scale(1);
+    }
+} */
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    display: flex;
+}
+
+.bubble{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+span{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgb(153, 255, 0);
+    box-shadow: 0 0 10px yellow, 0 0 20px yellow , 0 0 40px yellow;
+    margin: 0 8px;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+
+span:nth-child(even){
+    background-color: rgb(149, 0, 149);
+    box-shadow: 0 0 10px violet, 0 0 20px violet, 0 0 40px violet;
+}
+
+@keyframes animate {
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(0vh) scale(1);
+    }
+}
